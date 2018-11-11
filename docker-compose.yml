@@ -1,0 +1,11 @@
+version: "2.3"
+services:     
+  spring-boot-rest-docker-app:
+    image: springboot
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8080
+    volumes:
+      - /data/spring-boot-app
